@@ -4,71 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Responsive Web Starter Template" />
-  <title>Responsive Web Project</title>
+  <title>co-website-s</title>
 
-  <!-- Favicon -->
+  <!-- Links -->
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- ======= HEADER ======= -->
+
   <header class="header">
     <div class="container header-container">
-      <a class="logo" href="#">
-        <img src="assets/images/logo.png" alt="">
+
+      <a href="#" class="logo">
+        <img src="assets/images/logo.png" alt="Sakardu Adventures">
       </a>
+
       <nav class="navbar" id="navbar">
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Destination</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
       </nav>
-      <button href="#" class="btn_a">Book Now</button>
+
+      <a href="#" class="btn_primary">Book Now</a>
+
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
         <span></span>
         <span></span>
       </div>
+
     </div>
   </header>
 
-  <!-- ======= HERO SECTION ======= -->
   <section class="hero">
-    <div class="container">
-      <div class="herosection">
-        <div class="heroleft">
-          <p class="herotop">Experience the Peaks of Northern Pakistan</p>
-          <p class="heromiddle">Great <span>Tour</span> & <span>Journey</span> Begins With Us !!</p>
-          <p>With the convenience of birth, nothing is easy, it hates where it was, with flight, it dwells in guilt, eros, that is, as the body! Our silent, pain urn, cat food, delight as if, beds, laughter of pains will be excepted.</p>
-          <div>
-            <button class="btn_a">Book Your Trip</button>
-            <button class="btn_b">Learn More</button>
+    <div class="overlay"></div>
+
+    <div class="container hero-content">
+
+      <div class="hero-left">
+        <p class="hero-top">EXPERIENCE THE PEAKS OF NORTHERN PAKISTAN</p>
+
+        <h1 class="hero-title">
+          Great <span>Tour</span> & <span>Journey</span><br>
+          Begins With Us !!
+        </h1>
+
+        <p class="hero-desc">
+          Discover breathtaking landscapes, unforgettable journeys, and
+          world-class travel experiences across Northern Pakistan.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn_primary">Book Your Trip</a>
+          <a href="#" class="btn_outline">Learn More</a>
+        </div>
+      </div>
+
+      <!-- <div class="hero-right">
+        <div class="customers">
+          <p><strong>25K+</strong> Happy Customers</p>
+          <div class="stars">★★★★★</div>
+          <small>(Positive Reviews)</small>
+        </div>
+      </div> -->
+
+      <div class="hero-right">
+        <div class="review-box">
+          <div class="avatars">
+            <img src="assets/images/user1.jpg" alt="">
+            <img src="assets/images/user2.jpg" alt="">
+            <img src="assets/images/user3.jpg" alt="">
+            <img src="assets/images/user4.jpg" alt="">
+            <span class="avatar-plus">+</span>
+          </div>
+          <div class="review-text">
+            <h3>25K + <span>Happy Customers</span></h3>
+            <div class="stars">
+              ★★★★★
+              <small>(Positive Reviews)</small>
+            </div>
           </div>
         </div>
-        <div class="heroright"></div>
       </div>
+
     </div>
   </section>
-  
-  
+
   <section class="hero_bottom">
-    <div class="container">
+    <!-- <div class="container">
       <div class="bottom_boxes">
         <div class="feat_box">
           <div class="feat_img">
-            <img src="" alt="">
+            <img src="./assets/images/experience.jpg" alt="">
+          </div>
+          <div class="feat_text">
+            <h5>Best Experiences</h5>
+            <p>Who is easy to great? You see, the urn enters with some foot.</p>
+          </div>
+        </div>
+        <div class="feat_box">
+          <div class="feat_img_2">
+            <img src="./assets/images/experience.jpg" alt="">
           </div>
           <div class="feat_text">
             <h5>Best Experiences</h5>
@@ -77,16 +121,7 @@
         </div>
         <div class="feat_box">
           <div class="feat_img">
-            <img src="" alt="">
-          </div>
-          <div class="feat_text">
-            <h5>Best Experiences</h5>
-            <p>Who is easy to great? You see, the urn enters with some foot.</p>
-          </div>
-        </div>
-        <div class="feat_box">
-          <div class="feat_img">
-            <img src="" alt="">
+            <img src="./assets/images/experience.jpg" alt="">
           </div>
           <div class="feat_text">
             <h5>Affordable Prices</h5>
@@ -94,10 +129,70 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <div class="experience-row">
+      <div class="experience-card">
+        <div class="image-wrapper">
+          <img src="./assets/images/experience.jpg" alt="Experience">
+        </div>
+        <div class="content">
+          <div class="text">
+            <h3>Best Experiences</h3>
+            <p>Who is easy to great? You see, the urn enters with some foot.</p>
+          </div>
+          <div class="progress">
+            <svg width="90" height="90">
+              <circle class="bg" cx="45" cy="45" r="40"></circle>
+              <circle class="fg" cx="45" cy="45" r="40"></circle>
+            </svg>
+            <span>95%</span>
+          </div>
+        </div>
+      </div>
+      <div class="experience-card">
+        <div class="image-wrapper-2">
+          <img src="./assets/images/experience.jpg" alt="Experience">
+        </div>
+
+        <div class="content">
+          <div class="text">
+            <h3>Affordable Prices</h3>
+            <p>Who is easy to great? You see, the urn enters with some foot.</p>
+          </div>
+
+          <div class="progress">
+            <svg width="90" height="90">
+              <circle class="bg" cx="45" cy="45" r="40"></circle>
+              <circle class="fg" cx="45" cy="45" r="40"></circle>
+            </svg>
+            <span>95%</span>
+          </div>
+        </div>
+      </div>
+      <div class="experience-card">
+        <div class="image-wrapper">
+          <img src="./assets/images/experience.jpg" alt="Experience">
+        </div>
+
+        <div class="content">
+          <div class="text">
+            <h3>Affordable Prices</h3>
+            <p>Who is easy to great? You see, the urn enters with some foot.</p>
+          </div>
+
+          <div class="progress">
+            <svg width="90" height="90">
+              <circle class="bg" cx="45" cy="45" r="40"></circle>
+              <circle class="fg" cx="45" cy="45" r="40"></circle>
+            </svg>
+            <span>95%</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  
-  
+        
   <section class="who_section">
     <div class="container">
       <div class="w_box">
@@ -113,7 +208,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="ourad_section">
     <div class="container">
@@ -166,8 +260,7 @@
       </div>
     </div>
   </section>
-  
-  
+        
   <section class="popu_section">
     <div class="container">
       <div class="ad_text">
@@ -270,7 +363,6 @@
     </div>
   </section>
 
-
   <section class="testi_section">
     <div class="container">
       <div class="ad_text">
@@ -359,8 +451,6 @@
     </div>
   </section>
 
-
-  <!-- ================= CTA SECTION ================= -->
   <div class="cta-section">
     <div class="cta-box">
       <span class="badge">🛡️ 100% SAFETY GUARANTEED</span>
@@ -373,7 +463,6 @@
     </div>
   </div>
 
-<!-- ================= CONTACT SECTION ================= -->
   <div class="contact-section" id="contact">
 
     <div class="contact-grid">
@@ -507,7 +596,7 @@
     </div>
 
   </footer>
-  <!-- JS -->
+
   <script src="js/script.js"></script>
 </body>
 </html>
