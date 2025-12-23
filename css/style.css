@@ -1,7 +1,5 @@
 /* ============================== GLOBAL STYLES============================== */
-/* *{margin:0;padding:0;box-sizing:border-box;}
-a{text-decoration:none !important;}
-*/
+*{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Poppins',sans-serif;color:#FFF;line-height:1.6;background:#1e1e1e;}
 /* ============================== Buttons ============================== */
 .btn_a{background-color:#F59900;color:#FFF;border:1.5px solid #F59900;padding:12px 25px;font-size:1rem;border-radius:8px;cursor:pointer;transition:0.3s;}
@@ -63,14 +61,14 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 @media (max-width:480px){.adventure-card img{height:180px;}
 .adventure-card h3{font-size:1.2rem;}
 }
-.ad_button{text-align:center;}
+.ad_button{margin-top:40px;text-align:center;}
 .popu_section{padding:30px 0px;}
 /* Section */
 .destinations-section{padding:70px 20px;}
 /* Grid */
 .destinations-grid{max-width:1300px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
 /* Card */
-.destination-card{position:relative;border-radius:22px;overflow:hidden;border:2px solid #ffb703;transition:transform 0.4s ease; height: 300px;}
+.destination-card{position:relative;border-radius:22px;overflow:hidden;border:2px solid #ffb703;transition:transform 0.4s ease;height:300px;}
 .destination-card:hover{transform:translateY(-8px);}
 /* Image */
 .destination-card img{width:100%;height:100%;object-fit:cover;display:block;}
@@ -85,12 +83,12 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* Mobile */
 @media (max-width:480px){.overlay h3{font-size:1.2rem;}
 .overlay p{font-size:0.9rem;}
-.destination-card{ height: 235px;}
+.destination-card{height:235px;}
 }
 .testi_section{padding:30px 0px;}
 .testimonials-section{padding:80px 20px;}
 /* Grid */
-.testimonials-grid{max-width:1300px;margin:auto;display:grid;grid-template-columns: repeat(2, 1fr);gap:30px;}
+.testimonials-grid{max-width:1300px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:30px;}
 /* Card */
 .testimonial-card{background:radial-gradient( circle at top left,#1a1a1a,#0b0b0b );border-radius:18px;padding:28px;border:2px solid rgba(255,255,255,0.4);transition:transform 0.3s ease;}
 .testimonial-card:hover{transform:translateY(-6px);}
@@ -112,10 +110,8 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .view-btn{display:inline-block;padding:14px 26px;border:2px solid #ffb703;border-radius:14px;color:#fff;text-decoration:none;font-weight:600;transition:all 0.3s ease;}
 .view-btn:hover{background:#ffb703;color:#000;}
 /* Mobile */
-@media (max-width:480px){.quote{font-size:0.9rem;} .testimonials-grid {
-  grid-template-columns: 1fr;
-}
-
+@media (max-width:480px){.quote{font-size:0.9rem;}
+.testimonials-grid{grid-template-columns:1fr;}
 }
 /* ================= CTA SECTION ================= */
 .cta-section{padding:90px 20px;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover no-repeat;}
@@ -187,8 +183,6 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 /* . */
 /* . */
 /* . */
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Poppins',sans-serif;color:#fff;}
 /* ===== CONTAINER ===== */
 .container{width:90%;max-width:1200px;margin:auto;}
 /* ===== HEADER ===== */
@@ -284,4 +278,27 @@ body{font-family:'Poppins',sans-serif;color:#fff;}
 /* 📱 Mobile */
 @media (max-width:600px){.experience-row{grid-template-columns:1fr;justify-items:center;}
 .experience-card{width:100%;max-width:360px;}
+}
+/* . */
+/* . */
+/* . */
+/* . */
+/* . */
+/* . */
+/* . */
+.about-section{padding:80px 5%;color:#fff;}
+.about-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center;}
+/* Left Content */
+.about-tagline{font-size:12px;letter-spacing:3px;color:#bbb;margin-bottom:15px;}
+.about-title{font-size:42px;font-weight:700;margin-bottom:25px;}
+.about-title span{color:#fbbf24;/* Golden color */
+}
+.about-text{font-size:15px;line-height:1.8;color:#ddd;margin-bottom:15px;max-width:520px;}
+/* Image Styling */
+.about-image{border-radius:20px;border:3px solid #fff;padding:8px;}
+.about-image img{width:100%;height:auto;border-radius:15px;display:block;}
+/* Responsive */
+@media (max-width:992px){.about-container{grid-template-columns:1fr;text-align:center;}
+.about-text{margin:auto;}
+.about-title{font-size:34px;}
 }
