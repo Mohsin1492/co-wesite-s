@@ -201,7 +201,7 @@ p.heromiddle span{color:#F59900;text-decoration:underline;}
 .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;}
 .menu-toggle span{width:25px;height:3px;background:#fff;}
 /* ===== HERO ===== */
-.hero{height:100vh;background:url("../assets/images/hero_2.jpg") center/cover no-repeat;position:relative;display:flex;align-items:center;padding-top:90px;}
+.hero{height:100vh;background:url("../assets/images/hero.jpg") center/cover no-repeat;position:relative;display:flex;align-items:center;padding-top:90px;}
 .overlay{position:absolute;inset:0;background:rgba(0,0,0,0.6);}
 .hero-content{position:relative;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
 .hero-left{max-width:600px;}
